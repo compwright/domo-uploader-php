@@ -1,0 +1,42 @@
+{
+    "name": "compwright/domo-uploader-php",
+    "description": "PHP Data Uploader for Domo",
+    "type": "library",
+    "require": {
+        "php": "^8.3 || ^8.4",
+        "compwright/easy-api": "^1.1",
+        "psr/log": "^2.0 || ^3.0"
+    },
+    "require-dev": {
+        "compwright/oauth2-domo": "^1.1",
+        "friendsofphp/php-cs-fixer": "^3.74",
+        "guzzlehttp/guzzle": "^7.9",
+        "guzzlehttp/psr7": "^2.7",
+        "league/oauth2-client": "^2.8",
+        "phpstan/phpstan": "^2.1",
+        "symfony/console": "^7.2"
+    },
+    "suggest": {
+        "compwright/oauth2-domo": "Domo OAuth 2.0 authentication provider for league/oauth2-client",
+        "guzzlehttp/guzzle": "Recommended PSR-18 HTTP Client implementation",
+        "guzzlehttp/psr7": "Recommended PSR-7 HTTP Message implementation",
+        "symfony/console": "Recommended PSR-3 Logger implementation"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Compwright\\DomoUploaderPhp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Compwright\\DomoUploaderPhp\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jonathon Hill",
+            "email": "jonathon@compwright.com"
+        }
+    ]
+}
